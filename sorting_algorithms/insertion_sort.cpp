@@ -24,7 +24,7 @@ int main() {
     fs::path input_path = "../data/sample_10000.txt";
 
     // Fallback check: If run from root, look directly into data/
-    if (current_dir.filename() == "clrs-workspace") {
+    if (current_dir.filename() == "DSA") {
         input_path = "data/sample_10000.txt";
     }
 
