@@ -5,20 +5,19 @@
 #include "../utils/logger.hpp"
 
 // Standard CLRS Insertion Sort logic adapted to 0-indexed vectors
-void insertion_sort(std::vector<int>& A) {    // modify func to appropriate name
+void func(std::vector<int>& A) {    // modify func to appropriate name
     /*
-    standard function file
-    */
+    standard function file*/
 }
 
 int main() {
 // Look at the current path, or fall back to absolute tracking
     fs::path current_dir = fs::current_path();
-    fs::path input_path = "../data/sample_50000.txt";
+    fs::path input_path = "../data/sample_50000.txt"; // modify sample file path to necessity
 
     // Fallback check: If run from root, look directly into data/
     if (current_dir.filename() == "DSA") {
-        input_path = "data/sample_50000.txt";
+        input_path = "data/sample_50000.txt"; // modify sample file path to necessity
     }
 
     std::ifstream input_file(input_path);
@@ -35,6 +34,6 @@ int main() {
     }
     input_file.close();
 
-    benchmark("Insertion Sort", insertion_sort, arr); // modify to appropriate function 
+    benchmark("func_name", func, arr); // modify to appropriate function 
     return 0;
 }

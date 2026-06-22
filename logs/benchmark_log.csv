@@ -1,3 +1,6 @@
 Timestamp,Algorithm,Input Size,Time Elapsed (sec)
 2026-06-22 18:08:01,Insertion Sort,10000,0.402141
 2026-06-22 18:13:48,Insertion Sort,10000,0.431571
+2026-06-22 18:39:16,Insertion Sort,10000,0.430764
+2026-06-22 18:39:55,Insertion Sort,10000,0.463301
+2026-06-22 18:40:36,Insertion Sort,50000,11.208564
