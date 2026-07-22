@@ -2,6 +2,10 @@
 #include <vector>
 
 /*
+2.1-2: Sum Array
+*/
+
+/*
 ALGORITHM
 sum_array(A, n):
     sum = 0
@@ -17,13 +21,13 @@ INVARIANT
 
 /*
 PROOF
-    INITIALIZATION:
+    INITIALIZATION
         For first (leftmost) element, we look at the elements in A[1:i-1] = A[1:1-1] = A[1:0]
         which is empty array, hence has form sum = 0. We set this condition initially, hence it is true.
-    MAINTENANCE:
+    MAINTENANCE
         For every iteration i, we add the element A[i] back to the sum variable, which preserves the
         invariant for next index.
-    TERMINATION:
+    TERMINATION
         Once i = n+1, we get sum of elements A[1:n] and the loop terminates
 */
 
